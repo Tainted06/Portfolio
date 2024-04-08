@@ -1,166 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
-    <style>
-        .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        }
-    </style>
+    <html lang="en">
     <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Tainted.Dev | Portfolio</title>
-        <link rel="icon" href="assets/code.png" />
-        <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <link href="indexfiles/index.css" rel="stylesheet" />
-        <meta property="og:type" content="website">
-        <meta property="og:site_name" content="https://Tainted.Dev/">
-        <meta property="og:title" content="Tainted.Dev">
-        <meta property="og:description" content="I'm a 17-year-old developer currently in high school. This website showcases my projects, ventures, and skills, and I can be reached through email at Tainted-Dev@protonmail.com or on discord at Tainted#0069.">
-        <meta property="og:image" content="https://avatars.githubusercontent.com/u/80160851">
-        <meta name="theme-color" content="#3A3760">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Tainted | Portfolio</title>
     </head>
-    <body id="page-top" class="bg-dark">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-purple fixed-top" id="sideNav" style="background-color: black;">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Tainted</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="https://github.com/Tainted06/Portfolio/raw/main/assets/profilepic.gif" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Knowledge</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#ventures">Ventures</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
-                </ul>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                            
+                            <img src="assets/img/pic_dark.png" alt="">
+                        </div>
+                    </div>
+
+                    <h2 class="profile__name">Tainted</h2>
+                    <h3 class="profile__profession">Entrepreneur & Developer</h3>
+
+                    <ul class="profile__social">
+                        <a href="mailto:tainted-dev@protonmail.com" target="_blank" class="profile__social-link">
+                            <i class="ri-mail-line"></i>
+                        </a>
+                        <a href="https://discord.com/users/523827341030457365" target="_blank" class="profile__social-link">
+                            <i class="ri-discord-line"></i>
+                        </a>
+                        <a href="https://t.me/TaintedDev" target="_blank" class="profile__social-link">
+                            <i class="ri-telegram-line"></i>
+                        </a>
+                        <a href="https://github.com/Tainted06" target="_blank" class="profile__social-link">
+                            <i class="ri-github-line"></i>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="profile__info grid">
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">3+</h3>
+                        <p class="profile__info-description">
+                            Successful <br> ventures
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">150+</h3>
+                        <p class="profile__info-description">
+                            Completed <br> projects
+                        </p>
+                    </div>
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">999+</h3>
+                        <p class="profile__info-description">Satisfied <br> customers</p>
+                    </div>
+                </div>
+
+                <div class="profile__buttons">
+
+                    <div class="profile__buttons-small">
+                        <!-- Insert a real number plus country code -->
+
+                        <a href="mailto:tainted-dev@protonmail.com" target="_blank" class="button button__small button__gray">
+                            <i class="ri-mail-line"></i>
+                        </a>
+
+                    </div>
+
+                    <!-- Insert your CV -->
+                    <a target="_blank"  href="https://t.me/TaintedDev" class="button">
+                        Telegram <i class="ri-telegram-line"></i>
+                    </a>
+
+                    <div class="profile__buttons-small">
+                        <!-- Insert a real number plus country code -->
+                        
+                        <a href="https://discord.com/users/523827341030457365" target="_blank" class="button button__small button__gray">
+                            <i class="ri-discord-line"></i>
+                        </a>
+                        
+                    </div>
+                </div>
             </div>
-        </nav>
-        <div class="container-fluid p-0">
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0 text-white">
-                        Tainted<span class="text-danger">.Dev</span>
-                    </h1>
-                    <div class="subheading mb-5">
-                        Tainted#0069 ·
-                        <a href="mailto:Tainted-Dev@protonmail.com">Tainted-Dev@protonmail.com</a>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button class="filters__button filter-tab-active" data-target="#projects">
+                        Ventures
+                    </button>
+                    <button class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+                        <article class="projects__card">
+                            <!-- Insert your image in a rectangular format (Ex: 600 x 400, 1000 x 800, 1200 x 1000, etc) -->
+                            <img src="assets/img/project1.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">A leading residential & datacenter proxy provider.</span>
+                                    <h3 class="projects__title">EclipseProxy</h3>
+                                    <a href="https://eclipseproxy.com" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/project2.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">A digital store providing products for social media marketing and community building.</span>
+                                    <h3 class="projects__title">Tokens.Supply</h3>
+                                    <a href="https://tokens.supply" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/project3.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">A suite of high quality automation software for social media.</span>
+                                    <h3 class="projects__title">Aurora.Tools</h3>
+                                    <a href="https://aurora.tools" target="_blank" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/project4.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">A specialized tool to automate the creation of Discord accounts.</span>
+                                    <h3 class="projects__title">Atlas Gen</h3>
+                                    <a href="#" class="projects__button button disabled button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/project5.png" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">A development team specializing in the development of Discord bots.</span>
+                                    <h3 class="projects__title">Discord Services</h3>
+                                    <a href="#" class="projects__button button disabled button__small">
+                                        <i class="ri-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
                     </div>
-                    <p class="lead mb-5 text-white">I'm a 17-year-old developer currently in high school. This website showcases my projects, ventures, and skills, and I can be reached through email at Tainted-Dev@protonmail.com or on discord at Tainted#0069.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://discord.com/users/523827341030457365"><i class="fab fa-discord"></i></a>
-                        <a class="social-icon" href="https://github.com/Tainted06"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="mailto:Tainted-Dev@protonmail.com"><i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-            </section>
-            <hr style="height: 5px; background-color: rgb(252, 252, 252);" class="m-0" />
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content text-white">
-                    <h2 class="mb-5 text-white">Knowledge</h2>    
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0 text-primary">Languages I Know</h3>
-                            <br>
-                            <p> - Python<br> - C#<br> - Front End Web Development (HTML, CSS, JS)<br> - GoLang</p>
-                            <ul class="list-inline dev-icons">
-                                <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                                <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                                <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                                <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                            </ul>
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid" data-content id="skills">
+                        <div class="skills__area">
+                            <h3 class="skills__title">Expert</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">GoLang</h3>
+                                            <span class="skills__level">Programming Language</span>
+                                        </div>
+                                    </div>
+        
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">Python</h3>
+                                            <span class="skills__level">Programming Language</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                       <div>
+                                            <h3 class="skills__name">Discord's API</h3>
+                                            <span class="skills__level">API</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Browser Automation</h3>
+                                            <span class="skills__level">Technology/Concept</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills__area">
+                            <h3 class="skills__title">Proficient</h3>
+    
+                            <div class="skills__box">
+                                <div class="skills__group">
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+        
+                                        <div>
+                                            <h3 class="skills__name">C#</h3>
+                                            <span class="skills__level">Programming Language</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Reverse Engineering</h3>
+                                            <span class="skills__level">Concept/Practice</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="skills__group">
+
+                                    <div class="skills__data">
+                                        <i class="ri-checkbox-circle-line"></i>
+
+                                        <div>
+                                            <h3 class="skills__name">Web Development</h3>
+                                            <span class="skills__level">(HTML, CSS, JS)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0 text-primary">Technologies/APIs/Other Items I have lots of experience with</h3>
-                            <br>
-                            <p> - Discord API<br> - GIT<br> - Web Scraping<br> - BootStrap<br> - Browser Automation<br> - Basic Reversing</p>
-                            <ul class="list-inline dev-icons">
-                                <li class="list-inline-item"><i class="fab fa-discord"></i></li>
-                                <li class="list-inline-item"><i class="fab fa-git"></i></li>
-                                <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </section>
-            <hr style="height: 5px; background-color: rgb(252, 252, 252);" class="m-0" />
-            <section class="resume-section" id="ventures">
-                <div class="resume-section-content">
-                    <h2 class="mb-5 text-white">ventures</h2>
-                    <div class="container mt-5">
-                        <div class="row" style="justify-content: center;">
-                            <div class="col-sm-4">
-                                <h3 class="text-white" style="text-align: center;"><a href="https://discordservices.biz/">Discord Services</a></h3>
-                                <br>
-                                <img style="height: 100px;" class="center img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/discordservices.png">
-                                <br>
-                                <p class="text-white" style="font-family: Muli; text-align: center;">A small business specializing in the development of custom Discord bots tailored to meet your specific needs.</p>
-                                <p class="text-align" style="font-family: Muli; text-align: center;"><strong>Note:</strong> This business has shut down as of August 2022, it may reopen in the future.</a></p>
-                            </div>
-                            <div class="col-sm-4">
-                                <h3 class="text-white" style="text-align: center;"><a href="https://tokens.supply/">Tokens.Supply</a></h3>
-                                <br>
-                                <img style="height: 100px;" class="center img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/tokenssupply.png">
-                                <br>
-                                <p class="text-white" style="font-family: Muli; text-align: center;">A digital store offering a range of tools and products for social media marketing and community building.</p>
-                            </div>
-                            <div class="col-sm-4">
-                                <h3 class="text-white" style="text-align: center;"><a href="https://aurora.tools/">Aurora.Tools</a></h3>
-                                <br>
-                                <img style="height: 100px;" class="center img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/auroratools.png">
-                                <br>
-                                <p class="text-white" style="font-family: Muli; text-align: center;">A suite of high quality and affordable software for automating repetitive tasks on various platforms.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <hr style="height: 5px; background-color: rgb(252, 252, 252);" class="m-0" />
-            <section class="resume-section" id="projects">
-                <div class="resume-section-content">
-                    <h2 class="mb-5 text-white">projects</h2>
-                    <div class="container mt-5">
-                        <div class="row" style="justify-content: center;">
-                            <div class="col-sm-4">
-                                <h3 class="text-white" style="text-align: center;"><a href="https://carnagebot.xyz">Carnage Bot</a></h3>
-                                <br>
-                                <img style="height: 100px;" class="center img-fluid img-profile rounded-circle mx-auto mb-2" src="https://carnagebot.xyz/img/logo-circle.png">
-                                <br>
-                                <p class="text-white" style="font-family: Muli; text-align: center;">A multipurpose Discord bot with advanced features such as using solely Discord's interactions API and accessing multiple advanced APIs with tons of data!</p>
-                                <p class="text-align" style="font-family: Muli; text-align: center;"><strong>Made With:</strong> Python, <a href="https://pycord.dev/">Pycord</a></p>
-                            </div>
-                            <div class="col-sm-4">
-                                <h3 class="text-white" style="text-align: center;"><a href="https://Tainted.dev">Tainted.Dev</a></h3>
-                                <br>
-                                <img style="height: 100px;" class="center img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/code.png">
-                                <br>
-                                <p class="text-white" style="font-family: Muli; text-align: center;">A portfolio in the form of a website listing information about me, my skills, my projects, and more information!</p>
-                                <p class="text-align" style="font-family: Muli; text-align: center;"><strong>Made With:</strong> HTML, CSS, JavaScript, <a href="https://getbootstrap.com/">Bootstrap</a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <hr style="height: 5px; background-color: rgb(252, 252, 252);" class="m-0" />
-            <section class="resume-section" id="contact">
-                <div class="resume-section-content text-white">
-                    <h2 class="mb-5 text-white">contact</h2>
-                    <div class="subheading mb-3">Discord</div>
-                    <div class="flex-shrink-0"><span class="text-primary">Tainted#0069</span></div>
-                    <br>
-                    <div class="subheading mb-3">Email</div>
-                    <div class="flex-shrink-0"><span class="text-primary"><a href="mailto:Tainted-Dev@protonmail.com">Tainted-Dev@protonmail.com</a></span></div>
-                </div>
-            </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="indexfiles/index.js"></script>
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer container">
+            <span class="footer__copy">
+                Not made by me, made by <a href="https://github.com/vaibhavtomar04/portfolio" target="_blank"> someone on GitHub. </a>
+            </span>
+        </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>

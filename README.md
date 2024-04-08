@@ -1,2 +1,4 @@
-# Portfolio
-💳 My portfolio website with information about me, my projects, and contact information.
+# 💼 Responsive Mini Portfolio
+
+#### 🔴 (Not made by me)
+#### ➡️ Original Repo: https://github.com/vaibhavtomar04/portfolio
