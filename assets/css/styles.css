@@ -465,6 +465,10 @@ body.dark-theme {
   .skills__box {
     column-gap: 1rem;
   }
+
+  .projects__card:first-child {
+    grid-column: span 1; /* This makes the first project span both columns */
+  }
 }
 
 /* For medium devices */
@@ -478,6 +482,10 @@ body.dark-theme {
     width: 332px;
     margin: 3rem auto;
   }
+
+  .projects__card:first-child {
+     grid-column: span 1; /* This makes the first project span both columns */
+  }
 }
 
 @media screen and (min-width: 776px) {
@@ -489,6 +497,10 @@ body.dark-theme {
   .skills__content {
     justify-content: center;
     column-gap: 3rem;
+  }
+
+  .projects__card:first-child {
+    grid-column: span 2; /* This makes the first project span both columns */
   }
 }
 
@@ -547,4 +559,9 @@ body.dark-theme {
   .footer__copy {
     margin: 4.5rem 0 2.5rem;
   }
+
+  .projects__card:first-child {
+    grid-column: span 2; /* This makes the first project span both columns */
+  }
 }
+
